@@ -1,0 +1,31 @@
+PS C:\Users\LENOVO\Adversarial Noise Project> python src/main.py
+2024-06-19 12:08:18.396010: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-19 12:08:19.940289: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-06-19 12:12:44.864178: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 11s 17ms/step - accuracy: 0.5497 - loss: 0.9087 - val_accuracy: 0.7177 - val_loss: 0.6661
+Epoch 2/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 8s 16ms/step - accuracy: 0.7710 - loss: 0.5592 - val_accuracy: 0.8437 - val_loss: 0.4166
+Epoch 3/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 8s 16ms/step - accuracy: 0.8323 - loss: 0.4216 - val_accuracy: 0.8370 - val_loss: 0.4015
+Epoch 4/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 7s 15ms/step - accuracy: 0.8623 - loss: 0.3565 - val_accuracy: 0.8540 - val_loss: 0.3750
+Epoch 5/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 7s 14ms/step - accuracy: 0.8823 - loss: 0.3143 - val_accuracy: 0.8777 - val_loss: 0.3294
+Epoch 6/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 7s 16ms/step - accuracy: 0.8951 - loss: 0.2783 - val_accuracy: 0.8853 - val_loss: 0.3191
+Epoch 7/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 8s 16ms/step - accuracy: 0.9070 - loss: 0.2361 - val_accuracy: 0.8860 - val_loss: 0.3148
+Epoch 8/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 7s 15ms/step - accuracy: 0.9190 - loss: 0.2112 - val_accuracy: 0.8940 - val_loss: 0.3098
+Epoch 9/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 7s 15ms/step - accuracy: 0.9351 - loss: 0.1745 - val_accuracy: 0.8837 - val_loss: 0.3187
+Epoch 10/10
+469/469 ━━━━━━━━━━━━━━━━━━━━ 8s 16ms/step - accuracy: 0.9457 - loss: 0.1502 - val_accuracy: 0.8927 - val_loss: 0.3090
+94/94 ━━━━━━━━━━━━━━━━━━━━ 1s 8ms/step - accuracy: 0.9024 - loss: 0.2864
+Test accuracy on clean images: 89.27%
+94/94 ━━━━━━━━━━━━━━━━━━━━ 1s 9ms/step - accuracy: 0.0146 - loss: 8.6094
+Test accuracy on FGSM adversarial images: 1.20%
+94/94 ━━━━━━━━━━━━━━━━━━━━ 1s 7ms/step - accuracy: 0.0000e+00 - loss: 29.7061 
+Test accuracy on PGD adversarial images: 0.00%
